@@ -6,33 +6,35 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" type="text/css" href="../css/main.css">
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-  <title>PLAYFAIR CIPHER</title>
+  <title>RAIL-FENCE CIPHER</title>
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+          <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 </head>
 <body>
   
   <!-- CIPHER NAME -->
   <div class="title">
-    <h1>PLAYFAIR CIPHER</h1>
+    <h1>RAIL-FENCE CIPHER</h1>
   </div>
   
-  <!-- CONTROLS TO CIPHER AND DECIPHER MESSAGES -->
-
+    <!-- CONTROLS TO CIPHER AND DECIPHER MESSAGES -->
+    
     <div class="inOut">
-      <textarea name="input" rows="8" cols="80" id="inputMessage" placeholder="Input"></textarea>
-      <span>
+        <textarea name="input" rows="8" cols="80" id="inputMessage" placeholder="Input"></textarea>
+        <span>
         <button class="polyButton cipherMethod" id="cipherButtonPoly" onclick="cipherButtonFunction()" >Cipher</button>
         <button class="polyButton decipherMethod" id="decipherButton" onclick="decipherButtonFunction()">Decipher</button>
-        <br><br><br><br><br><br>
         <div class="inOut">
-          <input type="text" id="enteredKey" placeholder=" Enter Key">
+            <input type="text" id="enteredKey" placeholder=" Enter number of rows:">
         </div>
-      </span>
-      <textarea name="result" rows="8" cols="80" id="result" placeholder="Output"></textarea>
+        </span>
+        <textarea name="result" rows="8" cols="80" id="result" placeholder="Output"></textarea>
     </div>
- 
-    
-
-  <script type="text/javascript"src="../js/playfair.js"></script>
+    </div>
+      
+  <script type="text/javascript"src="../js/railfence.js"></script>
   <script type="text/javascript" src="../js/main.js"></script>
   <script>
     AOS.init({
